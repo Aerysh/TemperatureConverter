@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Temperature Converter</title>
+
+        <!-- CSS -->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            p{
+                text-align: center;
+            }
+        </style>
+
+        
+        <!-- JS -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <br/>
+            <h4><p>Temperature Converter</p></h4>
+            <!-- Converting Form -->
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Unused Column -->
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-primary">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="inputCelcius">Celcius</label>
+                                <div class="input-group">
+                                    <input type="text" name="inputCelcius" id="inputCelcius" class="form-control" onkeyup="fromCelcius()" value="0">
+                                    <span class="input-group-text">° C</span>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="form-group">
+                                <label for="inputFahrenheit">Fahrenheit</label>
+                                <div class="input-group">
+                                    <input type="text" name="inputFahrenheit" id="inputFahrenheit" class="form-control" onkeyup="fromFahrenheit()" value="0">
+                                    <span class="input-group-text">° F</span>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="form-group">
+                                <label for="inputKelvin">Kelvin</label>
+                                <div class="input-group">
+                                    <input type="text" name="inputKelvin" id="inputKelvin" class="form-control" onkeyup="fromKelvin()" value="0">
+                                    <span class="input-group-text">K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <hr>
+                    <br/>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- Unused Column -->
+                </div>
+            </div>
+            <!-- Equation -->
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- Unused Column -->
+                </div>
+
+                <div class="col-md-6">
+                    <h5><p>Equations</p></h5>
+                    <div class="card-group">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title">Celcius</b></h6>
+                                <h7>Celcius to Fahrenheit : </h7>
+                                <div>$$F = (C * {9 \over 5}) + 32$$</div>
+                                <br/>
+                                <h7>Celcius to Kelvin : </h7>
+                                <div>$$K = C + 275.15$$</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title">Fahrenheit</b></h6>
+                                <h7>Fahrenheit to Celcius : </h7>
+                                <div>$$C = (F - 32) * {5 \over 9}$$</div>
+                                <br/>
+                                <h7>Fahrenheit to Kelvin : </h7>
+                                <div>$$K = (F - 32) * {5 \over 9} + 273.15$$</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title">Kelvin</b></h6>
+                                <h7>Kelvin to Celcius : </h7>
+                                <div>$$C = K - 273.15 $$</div>
+                                <h7>Kelvin to Fahrenheit : </h7>
+                                <div>$$F = (K - 273.15) * {9 \over 5} + 32$$</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <!-- Unused Column -->
+                </div>
+            </div>
+            <br>
+            <br>
+            <!-- Footer ? -->
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <p>Aerysh 2021</p>
+                    <p>
+                        <a href="https://facebook.com/ahmadazwar.annas" style="color: black;"><i class="bx bxl-facebook bx-md"></i></a>
+                        <a href="https://github.com/Aerysh" style="color: black;"><i class="bx bxl-github bx-md"></i></a>
+                        <a href="https://twitter.com/aerysh_" style="color: black;"><i class="bx bxl-twitter bx-md"></i></a>
+                    </p>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
+
+<!-- CSS and JS used in this project -->
+<!-- Bootstrap -->
+<!-- Boxicons -->
+<!-- Mathjax -->
+
+<!-- This is the most ugly and lazy frontend coding -->
